@@ -4,5 +4,101 @@
     <meta charset="UTF-8" />
     <title>GIT commands</title>
   </head>
-  <body></body>
+  <body>
+    <h1>Basic Git commands</h1>
+    <p>Here is a list of some basic Git commands to get you going with Git.</p>
+    <table border="2px">
+      <tr>
+        <th>Git commands</th>
+        <th>Git task</th>
+      </tr>
+      <tr>
+        <td>
+          git config --global user.name "Sam Smith"<br />
+          git config --global user.email sam@example.com
+        </td>
+        <td>
+          Configure the author name and email address to be used with your
+          commits.
+        </td>
+      </tr>
+      <tr>
+        <td>git init</td>
+        <td>Create a new local repository.</td>
+      </tr>
+      <tr>
+        <td>git clone /path/to/repository</td>
+        <td>Create a working copy of a local repository.</td>
+      </tr>
+      <tr>
+        <td>
+          git add &lt;filename&gt; <br />
+          git add *
+        </td>
+        <td>Add one or more files to staging (index).</td>
+      </tr>
+      <tr>
+        <td>git commit -m "Commit message"</td>
+        <td>Commit changes to head (but not yet to the remote repository).</td>
+      </tr>
+      <tr>
+        <td>git commit -a</td>
+        <td>
+          Commit any files you've added with git add, and also commit any files
+          you've changed since then.
+        </td>
+      </tr>
+      <tr>
+        <td>git push origin master</td>
+        <td>Send changes to the master branch of your remote repository.</td>
+      </tr>
+      <tr>
+        <td>git status</td>
+        <td>
+          List the files you've changed and those you still need to add or
+          commit.
+        </td>
+      </tr>
+      <tr>
+        <td>git remote add origin &lt;server&gt;</td>
+        <td>Connect to a remote repository.</td>
+      </tr>
+      <tr>
+        <td>git checkout -b &lt;branchname&gt;</td>
+        <td>Create a new branch and switch to it.</td>
+      </tr>
+      <tr>
+        <td>git checkout &lt;branchname&gt;</td>
+        <td>Switch from one branch to another.</td>
+      </tr>
+      <tr>
+        <td>git branch</td>
+        <td>
+          List all the branches in your repo, and also tell you what branch
+          you're currently in.
+        </td>
+      </tr>
+      <tr>
+        <td>git branch -d &lt;branchname&gt;</td>
+        <td>Delete the feature branch.</td>
+      </tr>
+      <tr>
+        <td>git push origin &lt;branchname&gt;</td>
+        <td>
+          Push the branch to your remote repository, so others can use it.
+        </td>
+      </tr>
+      <tr>
+        <td>git push --all origin</td>
+        <td>Push all branches to your remote repository.</td>
+      </tr>
+      <tr>
+        <td>git pull</td>
+        <td>
+          Fetch and merge changes on the remote server to your working
+          directory.
+        </td>
+      </tr>
+    </table>
+  </body>
 </html>
